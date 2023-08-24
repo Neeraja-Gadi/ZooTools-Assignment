@@ -4,10 +4,8 @@ import { Card, CardContent, Typography, Button, Table, TableBody, TableCell, Tab
 const UserLeaderBoardCard = ({ title, data }) => {
   const [showAll, setShowAll] = useState(false);
 
-  // Sort the data in descending order of friendsInvited
   const sortedData = data.slice().sort((a, b) => b.friendsInvited - a.friendsInvited);
 
-  // Display  only the top 4 databased on showAll state
   const visibleData = showAll ? sortedData : sortedData.slice(0, 3);
 
   return (
