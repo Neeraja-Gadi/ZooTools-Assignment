@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+ZooTools Assignment(Intern)
+Create a DashBoard page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TechStack Used: React.js ,Material UI, HTML,CSS
 
-## Available Scripts
+Project Structure
+src/components: Contains reusable components like cards, sections, and other UI elements.
+src/App.js: The main App component that assembles the dashboard layout.
+src/constrains : Contains sample Data used within components .
 
-In the project directory, you can run:
 
-### `npm start`
+Features/Elements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+0.The top section displays a "Summary refferal Compitition"  text and buttons for different time ranges.
+-The buttons use styling to differentiate active and inactive states.
 
-### `npm test`
+1.Vertical Bars Section:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-A visual representation of data is shown using vertical bars.
+-The section is placed below the summary and buttons section.
 
-### `npm run build`
+2.Insights Section:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-A Section with insights is displayed, showing information in an organized manner.
+-The insights include carets and icons to indicate trends and recommendations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.User Leaderboard Card:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Displays a leaderboard of users with their invited friends and country.
+-Data is presented in a tabular format.
 
-### `npm run eject`
+4.Analytics Card:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Cards for displaying analytics data like traffic sources .
+-Data is presented using charts and row wise formats.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5.SignUp Location Card:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Displays sign-up locations with their respective values.
+-Data is presented in a charts  and row wise format along with Icons.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6.Behaviour Card:
 
-## Learn More
+-Cards for displaying analytics data like behaviour.
+-Data is presented using charts and row wise formats.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Customization
+I customized with various  colors, styles, and content of each card and section andtried to replicate the reference provided.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Notes:
+This project uses React and Material-UI for building the UI components.
+The code provided is a simplified representation and can be further enhanced and optimized.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach me out for the eloborated funtionalities as per your requirements. 
