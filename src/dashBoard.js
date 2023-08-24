@@ -1,12 +1,11 @@
 import React from 'react';
 import { Grid,Button, Card, CardContent,Typography } from '@mui/material';
-import VerticalBars from './components/section1';
+import Section1 from './components/section1';
 import Section2 from './components/section2';
 import AnalyticsCard from './components/section4'; 
 import SignUpLocationCard from "./components/section5" ;
 import UserLeaderBoardCard from "./components/section3" ;
 import {leaderBoardData,trafficData,countryData,behaviourData} from "./constrains/sampleData"
-
 
 
 const buttonStyle = {
@@ -43,23 +42,26 @@ const Dashboard = () => {
 
         {/* Section 1 */}
         <Grid item xs={12} style={{ marginBottom: '20px'}}>
-          <VerticalBars />
+          <Section1 />
         </Grid>
 
         {/* Section 2 */}
         <Grid item xs={12} style={{ marginBottom: '20px' }}>
           <Section2 />
         </Grid>
-
+        {/* Section 3 */}
         <Grid item xs={12} md={6} style={{ marginBottom: '20px' }}>
           <UserLeaderBoardCard title="User leaderboard"  data={leaderBoardData} />
         </Grid>
+        {/* Section 4 */}
         <Grid item xs={12} md={6} style={{ marginBottom: '20px' }} >
           <AnalyticsCard title="Traffic" sidetitle="Source"  showbutton= "See traffic sources " data={trafficData} />
         </Grid>
+        {/* Section 5 */}
         <Grid item xs={12} md={6} style={{ marginBottom: '20px' }}>
           <SignUpLocationCard title="SignUp location" sidetitle="Country"  showbutton = 'See all countries' data={countryData} />
         </Grid>
+        {/* Section 4/6*/}
         <Grid item xs={12} md={6} style={{ marginBottom: '20px' }}>
           <AnalyticsCard title="Behaviours" sidetitle="Browsers"  showbutton = 'See all behaviours' data={behaviourData} />
         </Grid>

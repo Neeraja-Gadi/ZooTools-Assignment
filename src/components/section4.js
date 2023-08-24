@@ -3,6 +3,8 @@ import { Card, CardContent, Typography, Button, Grid } from '@mui/material';
 
 const AnalyticsCard = ({ title, sidetitle, showbutton,data }) => {
   const [showAll, setShowAll] = useState(false);
+  
+    // eslint-disable-next-line no-unused-vars
   const visibleData = showAll ? data : data.slice(0, 7);
   const sortedData = data.slice().sort((a, b) => b.value - a.value);
   const maxValue = Math.max(...sortedData.map(item => item.value));

@@ -1,12 +1,10 @@
-// VerticalBars.js
 import React  from 'react';
 import { Card, CardContent, Typography,Tooltip  } from '@mui/material';
 import { GoPeople } from 'react-icons/go'
 import {daysData} from "../constrains/sampleData"
 
 
-
-const VerticalBars = () => {
+const Section1 = () => {
   const maxSignups = Math.max(...daysData.map(item => item.signups));
   const yAxisLines = 5; 
 
@@ -110,4 +108,4 @@ const VerticalBars = () => {
   );
 };
 
-export default VerticalBars;
+export default Section1;
