@@ -1,11 +1,11 @@
 
 const daysData = [
-  { date: 'August 01', signups: 3000 },
+  { date: 'August 01', signups: 980 },
   { date: 'August 02', signups: 1425 },
   { date: 'August 03', signups: 980 },
-  { date: 'August 04', signups: 2056 },
-  { date: 'August 05', signups: 1873 },
-  { date: 'August 06', signups: 1567 },
+  { date: 'August 04', signups: 1256 },
+  { date: 'August 05', signups: 1773 },
+  { date: 'August 06', signups: 2367 },
   { date: 'August 07', signups: 2800 },
   { date: 'August 08', signups: 1287 },
   { date: 'August 09', signups: 1723 },
@@ -35,14 +35,13 @@ const daysData = [
 ];
 
 const leaderBoardData = [
-    { email: "john_doe@gmail.com", friendsInvited: 3800, Country: "INDIA" },
-    { email: "jane_smith@gmail.com", friendsInvited: 3500, Country: "USA" },
-    { email: "example_user@gmail.com", friendsInvited: 3200, Country: "Germany" },
-    { email: "xyz@gmail.com", friendsInvited: 6500, Country: "USA" },
-    // { email: "abc@gmail.com", friendsInvited: 5200, Country: "Canada" },
-    // { email: "user123@yahoo.com", friendsInvited: 4800, Country: "Australia" },
-    // { email: "testuser@hotmail.com", friendsInvited: 4100, Country: "UK" },
-  
+    { email: "john@gmail.com", friendsInvited: 3800, Country: "INDIA" },
+    { email: "xyz@gmail.com", friendsInvited: 6500, Country: "UK" },
+    { email: "abc@gmail.com", friendsInvited: 5200, Country: "Canada" },
+    { email: "jane@gmail.com", friendsInvited: 3500, Country: "USA" },
+    { email: "user@gmail.com", friendsInvited: 3200, Country: "Germany" },
+ 
+   
   ];
   
   const trafficData = [
@@ -53,7 +52,6 @@ const leaderBoardData = [
       { source: 'Youtube',  value: 3000 },
       { source: 'Other',  value: 2000 },
       
-  
     ];
   
     const behaviourData = [

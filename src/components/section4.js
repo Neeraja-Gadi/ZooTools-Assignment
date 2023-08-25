@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Button, Grid } from '@mui/material';
 
 const AnalyticsCard = ({ title, sidetitle, showbutton,data }) => {
   const [showAll, setShowAll] = useState(false);
-  
+
     // eslint-disable-next-line no-unused-vars
   const visibleData = showAll ? data : data.slice(0, 7);
   const sortedData = data.slice().sort((a, b) => b.value - a.value);
@@ -14,18 +14,18 @@ const AnalyticsCard = ({ title, sidetitle, showbutton,data }) => {
       <CardContent>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item xs={4}>
-            <Typography variant="h6" style={{ display: 'inline-block', marginRight: '10px' }}>
+            <Typography variant="h7"  fontWeight="bold" style={{ display: 'inline-block', marginRight: '10px' }}>
               {title}
             </Typography>
           </Grid>
           <Grid item xs={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
             <Button
               
-              style={{ backgroundColor: 'lightgrey', color: 'black', fontSize: '10px' ,fontWeight:"bold"}}
+              style={{ backgroundColor: 'lightgrey', color: 'black', fontSize: '8px' ,fontWeight:"bold"}}
             >
               {sidetitle}
             </Button>
-            <Typography variant="body2" style={{ color: 'black', marginLeft: '20px'  }}>
+            <Typography variant="body2" style={{ color: 'black', marginLeft: '20px'   }}>
               City
             </Typography>
           </Grid>
@@ -36,18 +36,18 @@ const AnalyticsCard = ({ title, sidetitle, showbutton,data }) => {
               <div key={item.city} style={{ marginTop: '10px', display: 'flex', justifyContent:'space-between' }}>
                 <div
                   style={{
-                    height: '25px',
+                    height: '27px',
                     borderRadius: '5px',
-                    backgroundColor: '#fadfad', 
+                    backgroundColor: 'rgb(255 208 127 / 43%)', 
                     width: `${(item.value / maxValue) * 40}%`,
                     marginRight: '10px',
                     position: 'relative',
                   }}
                 >
                   <Typography
-                    variant="body1"
+                    variant="body2"
                     style={{
-                      fontSize: '16px',
+                      fontSize: '12px',
                       color: 'black',
                       position: 'absolute',
                       top: '50%',
@@ -76,7 +76,7 @@ const AnalyticsCard = ({ title, sidetitle, showbutton,data }) => {
            marginTop: '10px',
            backgroundColor: '#eee',
            color: 'black',
-           width: '25%',
+           width: '30%',
            fontSize :"10px",
            fontWeight: "bold",
            borderRadius: "8px"

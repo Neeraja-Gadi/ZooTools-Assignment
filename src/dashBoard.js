@@ -15,7 +15,7 @@ const buttonStyle = {
   fontWeight: 'bold',
   borderRadius: '10px',
   padding: '5px 10px',
-  marginRight: '5px',
+  margin: '0px,2.5px',
 };
 
 const Dashboard = () => {
@@ -46,7 +46,7 @@ const Dashboard = () => {
         </Grid>
 
         {/* Section 2 */}
-        <Grid item xs={12} style={{ marginBottom: '20px' }}>
+        <Grid item xs={12} style={{ marginBottom: '20px' }} >
           <Section2 />
         </Grid>
         {/* Section 3 */}
@@ -61,9 +61,9 @@ const Dashboard = () => {
         <Grid item xs={12} md={6} style={{ marginBottom: '20px' }}>
           <SignUpLocationCard title="SignUp location" sidetitle="Country"  showbutton = 'See all countries' data={countryData} />
         </Grid>
-        {/* Section 4/6*/}
+        {/* Section 4*/}
         <Grid item xs={12} md={6} style={{ marginBottom: '20px' }}>
-          <AnalyticsCard title="Behaviours" sidetitle="Browsers"  showbutton = 'See all behaviours' data={behaviourData} />
+          <AnalyticsCard title="Behaviour" sidetitle="Browsers"  showbutton = 'See all behaviours' data={behaviourData} />
         </Grid>
       </Grid>
     </div>

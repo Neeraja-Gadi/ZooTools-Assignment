@@ -1,5 +1,5 @@
 ZooTools Assignment(Intern)
-Create a DashBoard page
+Create a DashBoard page  and Deploy
 
 TechStack Used: React.js ,Material UI, HTML,CSS
 
@@ -9,7 +9,7 @@ src/App.js: The main App component that assembles the dashboard layout.
 src/constrains : Contains sample Data used within components .
 
 
-Features/Elements
+Features/Elements (Responsive)
 
 
 0.The top section displays a "Summary refferal Compitition"  text and buttons for different time ranges.
@@ -46,10 +46,9 @@ Features/Elements
 -Data is presented using charts and row wise formats.
 
 Customization
-I customized with various  colors, styles, and content of each card and section andtried to replicate the reference provided.
+I have customized with various  colors, styles, and content of each card and section and tried to replicate the reference provided.
 
 Notes:
 This project uses React and Material-UI for building the UI components.
 The code provided is a simplified representation and can be further enhanced and optimized.
 
-Feel free to reach me out for the eloborated funtionalities as per your requirements. 

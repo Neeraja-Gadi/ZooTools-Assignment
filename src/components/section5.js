@@ -4,8 +4,8 @@ import ReactCountryFlag from 'react-country-flag';
 
 const SignUpLocationCard = ({ title, sidetitle, data }) => {
   const [showAll, setShowAll] = useState(false);
-  
-  // eslint-disable-next-line no-unused-vars
+
+   // eslint-disable-next-line no-unused-vars
   const visibleData = showAll ? data : data.slice(0, 5);
   const sortedData = data.slice().sort((a, b) => b.value - a.value);
   const maxValue = Math.max(...sortedData.map(item => item.value));
@@ -27,17 +27,17 @@ const SignUpLocationCard = ({ title, sidetitle, data }) => {
   }, []);
 
   return (
-    <Card elevation={3} style={{ marginBottom: '20px' ,boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.2)',borderRadius: "10px"}}>
+    <Card elevation={3} style={{ marginBottom: '20px', boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: '10px' }}>
       <CardContent>
         <Grid container alignItems="center" justifyContent="space-between">
-          <Grid item xs={4}>
-            <Typography variant="h6" style={{ display: 'inline-block', marginRight: '10px' }}>
+          <Grid item xs={4} >
+            <Typography variant="h7" fontWeight="bold" style={{ display: 'inline-block', marginRight: '10px' }}>
               {title}
             </Typography>
           </Grid>
-          <Grid item xs={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+          <Grid item xs={8}  style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
             <Button
-              style={{ backgroundColor: 'lightgrey', color: 'black', fontSize: '10px' ,fontWeight:"bold" }}
+              style={{ backgroundColor: 'lightgrey', color: 'black', fontSize: '8px', fontWeight: 'bold' }}
             >
               {sidetitle}
             </Button>
@@ -49,18 +49,18 @@ const SignUpLocationCard = ({ title, sidetitle, data }) => {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             {sortedData.map(item => (
-              <div key={item.city} style={{ marginTop: '10px', display: 'flex', justifyContent:'space-between' }}>
+              <div key={item.city} style={{ marginTop: '10px', display: 'flex', justifyContent: 'space-between' }}>
                 <div
                   style={{
-                    height: '25px', 
-                    borderRadius: '5px', 
-                    backgroundColor: '#fadfad',
+                    height: '27px',
+                    borderRadius: '5px',
+                    backgroundColor: 'rgb(255 208 127 / 43%)',
                     width: `${(item.value / maxValue) * 40}%`,
                     marginRight: '10px',
                     position: 'relative',
                     display: 'flex',
                     alignItems: 'center',
-                    padding:"0 5px"
+                    padding: '0 5px'
                   }}
                 >
                   {item.country === 'Others' ? (
@@ -76,13 +76,13 @@ const SignUpLocationCard = ({ title, sidetitle, data }) => {
                     <ReactCountryFlag
                       countryCode={countryCodes[item.country]}
                       svg
-                      style={{ width: '20px', height: '20px', marginLeft: '5px' }} 
+                      style={{ width: '20px', height: '20px', marginLeft: '5px' }}
                     />
                   )}
                   <Typography
-                    variant="body1"
+                    variant="body2"
                     style={{
-                      fontSize: '16px',
+                      fontSize: '12px',
                       color: 'black',
                       marginLeft: '5px',
                       flex: 1,
@@ -91,7 +91,7 @@ const SignUpLocationCard = ({ title, sidetitle, data }) => {
                     {item.country}
                   </Typography>
                 </div>
-                <Typography variant="body2" style={{ color: "black" , minWidth: '40px' }}>
+                <Typography variant="body2" style={{ color: 'black', minWidth: '40px' }}>
                   {item.city}
                 </Typography>
                 <Typography variant="body2" style={{ color: 'black', minWidth: '40px' }}>
@@ -102,16 +102,18 @@ const SignUpLocationCard = ({ title, sidetitle, data }) => {
           </Grid>
         </Grid>
         {data.length > 5 && (
-          <Button onClick={() => setShowAll(!showAll)}
-          style={{
-            marginTop: '10px',
-            backgroundColor: '#eee',
-            color: 'black',
-            width: '25%',
-            fontSize :"10px",
-            fontWeight: "bold",
-            borderRadius: "8px"
-          }}>
+          <Button
+            onClick={() => setShowAll(!showAll)}
+            style={{
+              marginTop: '10px',
+              backgroundColor: '#eee',
+              color: 'black',
+              width: '25%',
+              fontSize: '10px',
+              fontWeight: 'bold',
+              borderRadius: '8px'
+            }}
+          >
             {showAll ? 'Show Less' : 'See all countries'}
           </Button>
         )}
@@ -121,3 +123,4 @@ const SignUpLocationCard = ({ title, sidetitle, data }) => {
 };
 
 export default SignUpLocationCard;
+

@@ -16,10 +16,10 @@ const Section1 = () => {
           alignItems: 'flex-end',
           justifyContent: 'space-between',
           height: '350px',
-          padding: '35px ',
+          padding: '15px ',
           overflow: 'hidden',
           position: 'relative',
-      
+          
         }}
       >
         <Typography
@@ -59,6 +59,7 @@ const Section1 = () => {
             key={index}
             style={{
               width: '100%',
+              
               borderBottom: '0.5px dotted #ebdddd', 
               position: 'absolute',
               bottom: `${(index / (yAxisLines - 1)) * 70}%`,
@@ -96,9 +97,11 @@ const Section1 = () => {
                 cursor: 'pointer',
                 marginBottom: '4px',
                 position: 'relative',
-                marginLeft: '8px',
-                marginRight: '8px',
+                marginLeft: '1px',
+                marginRight: '1px',
                 height: `${(item.signups / maxSignups) * 70}%`,
+               
+                
               }}
             />
           </Tooltip>
@@ -109,3 +112,4 @@ const Section1 = () => {
 };
 
 export default Section1;
+
